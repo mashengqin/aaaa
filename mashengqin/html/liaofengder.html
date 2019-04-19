@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        #blink{
+            font-size: 3rem;
+        }
+        .yuanma{
+            font-size:1.5rem;
+        }
+        .photo_one{
+            width: 100%;
+            height: 20rem;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="blink">廖烽der</h1>
+    <span class="yuanma">源码如下：</span>
+    <img src="../photo/微信图片_20190418113222.png" alt="" class="photo_one">
+    <a href="一只飞马的官方网站.html"><span class="fanhui">返回</span></a>
+    <script language="javascript">
+        function changeColor(){
+            var color="#f00|#0f0|#00f|#880|#808|#088|yellow|green|blue|gray";
+            color=color.split("|");
+            document.getElementById("blink").style.color=color[parseInt(Math.random() * color.length)];
+        }
+        setInterval("changeColor()",200);
+    </script>
+</body>
+</html>
